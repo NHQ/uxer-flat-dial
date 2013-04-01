@@ -1,0 +1,27 @@
+{
+  "name": "uxer-flat-dial",
+  "version": "2.0.0",
+  "description": "a flat dial / knob / spin event for touch and mouse",
+  "main": "flatdial.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:NHQ/uxer-flatdial.git"
+  },
+  "keywords": [
+    "uxer",
+    "ui",
+    "flat",
+    "ui",
+    "browserify",
+    "knob",
+    "dial"
+  ],
+  "author": "johnnyscript.us",
+  "license": "BLM"
+}
