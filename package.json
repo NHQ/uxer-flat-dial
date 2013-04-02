@@ -9,6 +9,13 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "browserify" : {
+    "transform" : "brfs"
+  },
+  "dependencies" : {
+    "brfs":"",
+    "uxer":""
+  },
   "repository": {
     "type": "git",
     "url": "git@github.com:NHQ/uxer-flatdial.git"
@@ -23,5 +30,5 @@
     "dial"
   ],
   "author": "johnnyscript.us",
-  "license": "BLM"
+  "license": "MIT/Bitcoin/BLM"
 }
