@@ -31,7 +31,7 @@ function init(w, c, bg, left, top){
 
     spin(flatdial.node);
 
-    var spinDegree = 90;
+    var spinDegree = 0;
 
     flatdial.node.addEventListener('spin', function(e){
 
