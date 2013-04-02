@@ -1,18 +1,19 @@
 .uxer-flatdial{
-  box-sizing: border-box;
   width:100px;
   height:100px;
   border-radius:50%;
+  box-sizing: content-box;
   border: 6px solid OrangeRed;
-  -webkit-transform: rotateZ(90deg);
+/*  -webkit-transform: rotateZ(90deg);*/
 }
 
-.uxer-flatdial-value{
-  width: 46%;
-  height: 6%;
+.uxer-flatdial-marker{
+  height: 31%;
+  width: 4%;
   background-color: OrangeRed;
   position:absolute;
-  left:48.5%;
-  top:47%;
-  border-radius: 11px;
+  left:48%;
+  top:57%;
+  border-radius: 8px;
+
 }

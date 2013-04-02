@@ -1,6 +1,6 @@
 var spin = require('uxer/spin');
 var Flatdial = require('../flatdial');
-
+var center = require('uxer').center;
 
 init(200, 'green', '#eef',710, 10)
 init(150, 'OrangeRed', 'brown', 240, 35)
@@ -14,9 +14,10 @@ function init(w, c, bg, left, top){
     opts.width = w; // set width or height and the other will be set automatically for roundness
     opts.color = c;
     opts.bgcolor = bg;
+    opts.markers = 1;
 
     var flatdial = Flatdial(opts);
-
+//    center(flatdial.node.childNodes[0])
     // create a parent div to position our dial on the page
     var div = document.createElement('div');
     div.style.position = 'absolute';
