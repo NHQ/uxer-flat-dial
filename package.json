@@ -1,6 +1,6 @@
 {
   "name": "uxer-flat-dial",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "description": "a flat dial / knob / spin event for touch and mouse",
   "main": "flatdial.js",
   "directories": {
