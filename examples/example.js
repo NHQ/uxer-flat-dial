@@ -2,10 +2,10 @@ var spin = require('uxer/spin');
 var Flatdial = require('../flatdial');
 var center = require('uxer').center;
 
-init(200, 'green', '#eef',710, 10)
-init(150, 'OrangeRed', 'brown', 240, 35)
-init(100, 'Gold', 'rgb(0,200,30)', 420, 70)
-init(50,'#000','yellow', 550, 105)
+init(200, 'green', '#eef', 10, 10)
+init(150, 'OrangeRed', 'brown', 250, 35)
+init(100, 'Gold', 'rgb(0,200,30)', 430, 70)
+init(50,'#000','yellow', 560, 105)
 
 function init(w, c, bg, left, top){
 
@@ -14,10 +14,9 @@ function init(w, c, bg, left, top){
     opts.width = w; // set width or height and the other will be set automatically for roundness
     opts.color = c;
     opts.bgcolor = bg;
-    opts.markers = 1;
 
     var flatdial = Flatdial(opts);
-//    center(flatdial.node.childNodes[0])
+
     // create a parent div to position our dial on the page
     var div = document.createElement('div');
     div.style.position = 'absolute';
@@ -28,6 +27,7 @@ function init(w, c, bg, left, top){
 
     document.body.appendChild(flatdial.style)
     document.body.appendChild(div)
+
 
     spin(flatdial.node);
 
@@ -47,7 +47,7 @@ function init(w, c, bg, left, top){
 	// the wiseness of your user's clockity
 	var clockwise = data.clockwise 
 
-	spinDegree += delta
+	spinDegree += delta || 0
 
 	flatdial.node.style['-webkit-transform'] = 'rotateZ('+(spinDegree)+'deg)'
     });
