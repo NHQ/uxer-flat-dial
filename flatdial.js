@@ -1,12 +1,15 @@
 var fs = require('fs');
-var html = fs.readFileSync('./assets/flatdial.html', 'utf8');
-var css = fs.readFileSync('./assets/flatdial.css', 'utf8');
+var html = fs.readFileSync(__dirname + '/assets/flatdial.html', 'utf8');
+var css = fs.readFileSync(__dirname + '/assets/flatdial.css', 'utf8');
 
 module.exports = function(opts){
 
   var dial = makenode(html);
   var dialStyle = makeStyle(css);
   var marker = dial.querySelectorAll('.uxer-flatdial-marker')[0];
+
+  var ticker = document.createElement('div');
+  ticker.classList.add('uxer-flatdial-ticker');
 
   if(opts.width || opts.height) {
     var w = opts.width || opts.height
@@ -25,7 +28,8 @@ module.exports = function(opts){
   
   dial.uxerValue = 0;
   
-  return {node: dial, style: dialStyle, script: null}
+  
+  return {node: dial, style: dialStyle, script: null,  ticker: ticker}
 
 }
 

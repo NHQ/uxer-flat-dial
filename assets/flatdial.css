@@ -1,3 +1,8 @@
+body, input, div{
+/*  -webkit-user-select:none;
+*/
+}
+
 .uxer-flatdial{
   width:100px;
   height:100px;
@@ -15,4 +20,27 @@
   left:47%;
   top:57%;
   border-radius: 8px;
+}
+
+.uxer-flat-text-input{
+  position:absolute;
+  outline:none;
+  border: 3px solid OrangeRed;
+  color: OrangeRed;
+}
+
+.uxer-flat-text-input:focus{
+  outline:none;
+  border: LimeGreen;
+}
+
+.uxer-flat-filepicker{
+  position:absolute;
+  width:200px;
+  height: 40px;
+  color: OrangeRed;
+  font-family: helvetica;
+  outline: none;
+  zoom: 2;
+  
 }
