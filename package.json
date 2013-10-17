@@ -14,7 +14,8 @@
   },
   "dependencies": {
     "brfs": "",
-    "uxer": ""
+    "uxer": "",
+	"node-uuid" : ""
   },
   "repository": {
     "type": "git",
