@@ -1,6 +1,6 @@
 {
   "name": "uxer-flat-dial",
-  "version": "4.0.0",
+  "version": "4.1.0",
   "description": "a flat dial / knob / spin event for touch and mouse",
   "main": "flatdial.js",
   "directories": {
@@ -15,7 +15,7 @@
   "dependencies": {
     "brfs": "",
     "uxer": "",
-	"node-uuid" : ""
+    "node-uuid": ""
   },
   "repository": {
     "type": "git",
