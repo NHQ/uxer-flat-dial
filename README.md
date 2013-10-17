@@ -21,6 +21,7 @@ See the example below, which can be easily run if you have browserify and opa in
 npm install -g browserify opa
 git clone https://github.com/NHQ/uxer-flat-dial.git
 cd uxer-flat-dial
+npm install .
 opa -e examples/example.js -n
 ```
 
